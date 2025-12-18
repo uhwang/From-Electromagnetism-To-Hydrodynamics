@@ -1,5 +1,5 @@
 # The Mathematical Bridge: How Electromagnetism Shaped Numerical Methods in Fluid Dynamics
-
+by Uisang Hwang along with Gemini, ChatGPT, and Claude
 ## Abstract
 
 The development of modern numerical methods in fluid dynamics did not proceed independently of advances in classical physics. On the contrary, many of the mathematical structures, physical intuitions, and computational strategies that underlie lifting-line theory, lifting-surface theory, and panel methods were inherited directly from classical electromagnetism and potential theory. This manuscript presents a historically grounded and mathematically explicit account of how ideas originating in electrostatics and magnetostatics were transferred, adapted, and ultimately transformed into the foundational tools of theoretical and computational aerodynamics. Emphasis is placed on the continuity of ideas across disciplines, the personal and intellectual relationships among key scientists, and the gradual evolution from analytical field theory to numerical boundary-integral methods.
