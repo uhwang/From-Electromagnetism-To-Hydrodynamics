@@ -174,7 +174,7 @@ The induced velocity field of a horseshoe vortex can be calculated using the Bio
 
 The physical picture is compelling: just as a current loop generates a magnetic field that exerts forces on other currents, a bound vortex generates an induced velocity field that affects the flow elsewhere. The lift force on the bound vortex, given by the Kutta-Joukowski theorem, arises from the interaction between the bound circulation and the freestream velocity, exactly analogous to the Lorentz force on a current-carrying wire in a magnetic field.
 
-Laplace’s Equation, Poisson’s Equation, and Singular Surface Representations in Panel Methods
+## 11. Laplace’s Equation, Poisson’s Equation, and Singular Surface Representations in Panel Methods
 
 Classical panel methods are commonly described as solutions of Laplace’s equation for the velocity potential, and this statement is correct—but only when interpreted with appropriate mathematical precision. The apparent contradiction arises from the fact that panel methods employ surface distributions of singularities, which resemble Poisson-type sources, even though the governing equation in the flow domain is Laplace’s equation. Resolving this distinction is essential for a rigorous understanding of both the mathematical structure and historical lineage of panel methods.
 
