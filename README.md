@@ -195,7 +195,7 @@ The essay attracted almost no attention when first published. It was William Tho
 
 Green's identities follow from the divergence theorem. Let $\phi$ and $\psi$ be two sufficiently smooth scalar functions defined on a domain $\Omega$ with boundary $\partial\Omega$ and outward unit normal $\hat{n}$. The divergence theorem states:
 
-$$\iiint_\Omega \nabla \cdot \mathbf{F} \, dV = \unicode{x222F}_{\partial\Omega} \mathbf{F} \cdot \hat{n} \, dS$$
+$$\iiint_\Omega \nabla \cdot \mathbf{F} \, dV = \mathop{\bigcirc\!\!\!\!\iint}_{\partial\Omega} \mathbf{F} \cdot \hat{n} \, dS$$
 
 **First Green's Identity:** Apply the divergence theorem to $\mathbf{F} = \phi \nabla\psi$:
 
@@ -203,13 +203,13 @@ $$\nabla \cdot (\phi \nabla\psi) = \phi \nabla^2\psi + \nabla\phi \cdot \nabla\p
 
 Integrating over $\Omega$:
 
-$$\iiint_\Omega \left(\phi\nabla^2\psi + \nabla\phi\cdot\nabla\psi\right) dV = \unicode{x222F}_{\partial\Omega} \phi\frac{\partial\psi}{\partial n} \, dS$$
+$$\iiint_\Omega \left(\phi\nabla^2\psi + \nabla\phi\cdot\nabla\psi\right) dV = \mathop{\bigcirc\!\!\!\!\iint}_{\partial\Omega} \phi\frac{\partial\psi}{\partial n} \, dS$$
 
 This is Green's **First Identity**. It relates the integral of $\phi\nabla^2\psi$ over the volume to boundary integrals, revealing how the harmonic structure of a function relates to its boundary behavior.
 
 **Second Green's Identity (Green's Theorem):** Subtract the analogous expression with $\phi$ and $\psi$ interchanged:
 
-$$\iiint_\Omega \left(\phi\nabla^2\psi - \psi\nabla^2\phi\right) dV = \unicode{x222F}_{\partial\Omega} \left(\phi\frac{\partial\psi}{\partial n} - \psi\frac{\partial\phi}{\partial n}\right) dS$$
+$$\iiint_\Omega \left(\phi\nabla^2\psi - \psi\nabla^2\phi\right) dV = \mathop{\bigcirc\!\!\!\!\iint}_{\partial\Omega} \left(\phi\frac{\partial\psi}{\partial n} - \psi\frac{\partial\phi}{\partial n}\right) dS$$
 
 This is Green's **Second Identity**, sometimes called Green's theorem or the Green–Gauss theorem. It is symmetric in the exchange of $\phi$ and $\psi$ modulo sign and is the key tool for deriving integral representations of harmonic functions.
 
@@ -221,7 +221,7 @@ $$\nabla^2 G_0(\mathbf{x}, \mathbf{x}') = \delta(\mathbf{x} - \mathbf{x}')$$
 
 Substituting into Green's Second Identity and using the sifting property of the delta function:
 
-$$\phi(\mathbf{x}) = \unicode{x222F}_{\partial\Omega} \left[G_0(\mathbf{x},\mathbf{x}')\frac{\partial\phi}{\partial n'}(\mathbf{x}') - \phi(\mathbf{x}')\frac{\partial G_0}{\partial n'}(\mathbf{x},\mathbf{x}')\right] dS'$$
+$$\phi(\mathbf{x}) = \mathop{\bigcirc\!\!\!\!\iint}_{\partial\Omega} \left[G_0(\mathbf{x},\mathbf{x}')\frac{\partial\phi}{\partial n'}(\mathbf{x}') - \phi(\mathbf{x}')\frac{\partial G_0}{\partial n'}(\mathbf{x},\mathbf{x}')\right] dS'$$
 
 for $\mathbf{x} \in \Omega$. This is **Green's Representation Formula** (also called Green's Third Identity). It expresses the value of $\phi$ at any interior point solely in terms of boundary values of $\phi$ and $\partial\phi/\partial n$. This is the foundational theorem of boundary integral methods.
 
@@ -237,7 +237,7 @@ $$G(\mathbf{x}, \mathbf{x}') = 0 \quad \text{for } \mathbf{x} \in \partial\Omega
 
 Using this domain-specific Green's function in the representation formula, the Neumann boundary term vanishes, yielding an explicit solution:
 
-$$\phi(\mathbf{x}) = -\unicode{x222F}_{\partial\Omega} f(\mathbf{x}')\frac{\partial G}{\partial n'}(\mathbf{x},\mathbf{x}') \, dS'$$
+$$\phi(\mathbf{x}) = -\mathop{\bigcirc\!\!\!\!\iint}_{\partial\Omega} f(\mathbf{x}')\frac{\partial G}{\partial n'}(\mathbf{x},\mathbf{x}') \, dS'$$
 
 where $f = \phi|_{\partial\Omega}$ is the Dirichlet data. The derivative $\partial G/\partial n'$ is called the **Poisson kernel** and encodes complete information about how boundary values propagate into the interior.
 
@@ -277,7 +277,7 @@ What makes Maxwell's achievement especially remarkable in the context of the pre
 
 The first Maxwell equation is **Gauss's law for electricity**. In integral form, it states that the total electric flux through any closed surface equals the total enclosed free charge divided by $\varepsilon_0$:
 
-$$\unicode{x222F}_S \mathbf{E} \cdot \hat{n} \, dA = \frac{Q_\text{enc}}{\varepsilon_0}$$
+$$\mathop{\bigcirc\!\!\!\!\iint}_S \mathbf{E} \cdot \hat{n} \, dA = \frac{Q_\text{enc}}{\varepsilon_0}$$
 
 The differential form, $\nabla \cdot \mathbf{E} = \rho/\varepsilon_0$, follows from the divergence theorem. This equation expresses the **source character** of the electric field: electric charges are sources and sinks of the electric field. In a charge-free region, $\nabla \cdot \mathbf{E} = 0$, so the electric field is divergence-free there.
 
@@ -291,7 +291,7 @@ In a charge-free region, this reduces to Laplace's equation $\nabla^2 V = 0$. Th
 
 The second Maxwell equation, $\nabla \cdot \mathbf{B} = 0$, states that there are **no magnetic monopoles**. Magnetic field lines never begin or end; they always form closed loops or extend to infinity. In integral form:
 
-$$\unicode{x222F}_S \mathbf{B} \cdot \hat{n} \, dA = 0$$
+$$\mathop{\bigcirc\!\!\!\!\iint}_S \mathbf{B} \cdot \hat{n} \, dA = 0$$
 
 for any closed surface $S$. This is analogous to the conservation of vorticity in ideal fluid dynamics: by Helmholtz's theorem, vortex lines cannot terminate within the fluid—they too must form closed loops or extend to boundaries. The mathematical structure is identical: $\nabla \cdot \mathbf{B} = 0$ mirrors $\nabla \cdot \boldsymbol{\omega} = 0$ (since $\boldsymbol{\omega} = \nabla \times \mathbf{u}$ implies $\nabla \cdot \boldsymbol{\omega} = \nabla \cdot (\nabla \times \mathbf{u}) = 0$ identically). This parallel deeply influenced Helmholtz's and Kelvin's vortex theories.
 
