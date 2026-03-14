@@ -89,9 +89,11 @@ In aerodynamics, $\phi$ serves as the velocity potential and $\psi$ as the strea
 In practice, one seeks solutions to Laplace's equation subject to prescribed conditions on the boundary of a domain. Three classical boundary value problems arise:
 
 **Dirichlet Problem:** The value of $\phi$ is prescribed on the boundary $\partial\Omega$:
+
 $$\nabla^2\phi = 0 \text{ in } \Omega, \qquad \phi = f \text{ on } \partial\Omega$$
 
 **Neumann Problem:** The normal derivative $\partial\phi/\partial n$ is prescribed on the boundary:
+
 $$\nabla^2\phi = 0 \text{ in } \Omega, \qquad \frac{\partial\phi}{\partial n} = g \text{ on } \partial\Omega$$
 
 **Mixed (Robin) Problem:** A linear combination of $\phi$ and $\partial\phi/\partial n$ is prescribed.
